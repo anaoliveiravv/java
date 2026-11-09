@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: productsapi
+
+#tem as config do banco de dados

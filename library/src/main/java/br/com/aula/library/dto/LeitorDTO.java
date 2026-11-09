@@ -1,4 +1,9 @@
 package br.com.aula.library.dto;
 
-public class LeitorDTO {
-}
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+
+public record LeitorDTO (
+        Long id,
+        @NotBlank String nome,
+        @NotBlank @Email String email){}

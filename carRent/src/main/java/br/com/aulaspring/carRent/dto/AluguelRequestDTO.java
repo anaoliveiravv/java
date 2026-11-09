@@ -1,12 +1,8 @@
 package br.com.aulaspring.carRent.dto;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
-public record AluguelDTO(
+public record AluguelRequestDTO( //dados que vao ENTRAR
 
-        Long id,
         int usuario,
-        int carro,
-        LocalDateTime dataInicio,
-        LocalDateTime dataFim ){}
+        int carro ){}

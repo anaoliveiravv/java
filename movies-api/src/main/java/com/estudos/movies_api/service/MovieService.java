@@ -1,4 +1,4 @@
-package service;
+package com.estudos.movies_api.service;
 
 import org.springframework.stereotype.Service;
 

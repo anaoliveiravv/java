@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5dabf" />
+    <title>Amigo secreto</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="card" aria-labelledby="titulo">
+        <header class="header">
+          <div class="brand-icon" aria-hidden="true">✳</div>
+          <p class="eyebrow">UMA TROCA ESPECIAL</p>
+          <h1 id="titulo">Amigo secreto</h1>
+          <p class="intro">Reúna a turma, organize os detalhes e deixe o sorteio com a gente.</p>
+        </header>
+
+        <section class="settings" aria-label="Detalhes da troca">
+          <div class="setting"><span>VALOR DO PRESENTE</span><strong>Até R$ 300</strong></div>
+          <div class="setting"><span>DATA DA TROCA</span><strong>25/12/2026</strong></div>
+        </section>
+
+        <div class="divider"><span>DESCUBRA SEU AMIGO SECRETO</span></div>
+        <form id="form-consulta" class="form-participante">
+          <label class="sr-only" for="nome-consulta">Nome</label>
+          <input id="nome-consulta" name="nome" placeholder="Seu nome" autocomplete="name" required />
+          <label class="sr-only" for="email-consulta">E-mail</label>
+          <input id="email-consulta" name="email" type="email" placeholder="Seu e-mail" autocomplete="email" required />
+          <button class="button button-burgundy" type="submit">Fazer o sorteio</button>
+        </form>
+
+        <div class="organizer-actions">
+          <button id="abrir-lista" class="secondary-action" type="button"><span>Lista de participantes</span><span id="contador" class="count">0</span></button>
+          <button id="abrir-cadastro" class="secondary-action" type="button">Cadastrar participante <span aria-hidden="true">＋</span></button>
+        </div>
+        <p id="mensagem" class="message" role="status"></p>
+      </section>
+      <p class="footer-note"><span aria-hidden="true">♥</span> Um presente pensado com carinho vale mais.</p>
+    </main>
+
+    <dialog id="modal-lista" class="modal">
+      <button id="fechar-lista" class="close" type="button" aria-label="Fechar">×</button>
+      <p class="eyebrow">NOSSA TURMA</p>
+      <h2>Lista de participantes</h2>
+      <ul id="lista-popup" class="participant-list popup-list"></ul>
+      <p id="vazio" class="empty">A lista começa com a primeira pessoa ✨</p>
+    </dialog>
+
+    <dialog id="modal-cadastro" class="modal">
+      <form id="form-cadastro">
+        <button id="fechar-cadastro" class="close" type="button" aria-label="Fechar">×</button>
+        <p class="eyebrow">NOVA PESSOA</p>
+        <h2>Cadastrar participante</h2>
+        <label for="nome">Nome</label>
+        <input id="nome" name="nome" placeholder="Nome da pessoa" autocomplete="name" required />
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" placeholder="email@exemplo.com" autocomplete="email" required />
+        <p class="modal-help">Sugestões de presente (opcional)</p>
+        <input id="desejo-1" placeholder="Sugestão 1" />
+        <input id="desejo-2" placeholder="Sugestão 2" />
+        <input id="desejo-3" placeholder="Sugestão 3" />
+        <button class="button button-green" type="submit">Adicionar à lista</button>
+      </form>
+    </dialog>
+
+    <dialog id="modal-resultado" class="modal result-modal">
+      <button id="fechar-resultado" class="close" type="button" aria-label="Fechar">×</button>
+      <div id="resultado" class="result-content"></div>
+    </dialog>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

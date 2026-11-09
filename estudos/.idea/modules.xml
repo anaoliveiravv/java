@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/this/Alunos/Alunos.iml" filepath="$PROJECT_DIR$/this/Alunos/Alunos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CadastroAlunos/CadastroAlunos.iml" filepath="$PROJECT_DIR$/CadastroAlunos/CadastroAlunos.iml" />
       <module fileurl="file://$PROJECT_DIR$/Calculadora ativ/Calculadora ativ.iml" filepath="$PROJECT_DIR$/Calculadora ativ/Calculadora ativ.iml" />
       <module fileurl="file://$PROJECT_DIR$/Loops/Loops.iml" filepath="$PROJECT_DIR$/Loops/Loops.iml" />
       <module fileurl="file://$PROJECT_DIR$/OrientacaoaObjetos/OrientacaoaObjetos.iml" filepath="$PROJECT_DIR$/OrientacaoaObjetos/OrientacaoaObjetos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/this/Salario/Salario.iml" filepath="$PROJECT_DIR$/this/Salario/Salario.iml" />
       <module fileurl="file://$PROJECT_DIR$/estudos.iml" filepath="$PROJECT_DIR$/estudos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testes/testes.iml" filepath="$PROJECT_DIR$/testes/testes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/this/this.iml" filepath="$PROJECT_DIR$/this/this.iml" />
     </modules>
   </component>
 </project>

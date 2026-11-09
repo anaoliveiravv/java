@@ -1,0 +1,10 @@
+{
+  "name": "amigo-secreto-front",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "backend": "javac Backend.java Participante.java Sorteio.java && java Backend"
+  }
+}

@@ -15,11 +15,6 @@ public class Main {
 
         System.out.printf("O seu carro é um %s %d, da marca %s, de cor %s\n", carro2.modelo, carro2.ano,carro2.marca, carro2.cor);
 
-        carro1.ligar();
-        carro1.andar();
-        carro1.desligar();
-        carro1.parar();
-        carro1.andar();
 
     }
 }

@@ -1,4 +1,7 @@
 package br.com.aula.library.repository;
 
-public interface EmprestimoRepository {
+import br.com.aula.library.model.Emprestimo;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface EmprestimoRepository extends JpaRepository<Emprestimo, Long> {
 }
